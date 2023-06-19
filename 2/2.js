@@ -11,16 +11,31 @@
   const strokeStyleHaftCirclePart4 = "#37456c";
   const strokeStyleHaftCircleBackground = "#101936";
 
-  const CardData = {
-    part1: 30,
-    part2: 20,
-    part3: 30,
-    part4: 20,
-    agvNumber: 2710,
-    ip: "10.220.72.230",
-    status: "Online",
-    percent: 34,
-  };
+  class CardData {
+    /**
+     *
+     * @param {Number} part1
+     * @param {Number} part2
+     * @param {Number} part3
+     * @param {Number} part4
+     * @param {Number} agvNumber
+     * @param {String} ip
+     * @param {String} status
+     * @param {Number} percent
+     *
+     *
+     */
+    constructor(part1, part2, part3, part4, agvNumber, ip, status, percent) {
+      this.part1 = part1;
+      this.part2 = part2;
+      this.part3 = part3;
+      this.part4 = part4;
+      this.agvNumber = agvNumber;
+      this.ip = ip;
+      this.status = status;
+      this.percent = percent;
+    }
+  }
 
   /**
    *
