@@ -143,16 +143,6 @@
 
   /**
    *
-   * @param {Number} min
-   * @param {Number} max
-   *
-   */
-  function generateRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  /**
-   *
    * @param {HTMLCanvasElement[]} chartHalfCircles
    * @param {Array} halfCircleData
    *
@@ -331,7 +321,6 @@
       classes.chartHalfCircle
     );
     const layer = window.document.getElementsByClassName(classes.layer)[0];
-    const halfCircleData = getCardData();
 
     displayCards(layer, chartHalfCircles);
   }
