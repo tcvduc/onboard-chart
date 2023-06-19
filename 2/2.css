@@ -25,7 +25,7 @@
 }
 
 .topCard {
-  background-color: aliceblue;
+  background-color: transparent;
   height: 40%;
   position: relative;
   display: flex;
@@ -40,9 +40,87 @@
 
 .bottomCard {
   height: 60%;
-  background-color: #616a69;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 12px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #364268;
+  top: 140%;
+}
+
+.dot {
+  --size: 10px;
+  width: var(--size);
+  height: var(--size);
+  background-color: #6e72fe;
+  border-radius: 50%;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #608ad7;
 }
 
 .card:last-child {
   margin-right: 0;
+}
+
+.batteryInfo {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.percent {
+  font-size: 28px;
+  color: #fff;
+}
+
+.info {
+  color: #608ad7;
+  font-weight: 500;
+}
+
+.buttonOnline {
+  background-color: #4bb054;
+  padding: 6px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonOnline:active {
+  background-color: #4bb0537d;
+}
+
+.content {
+  color: #becfdf;
+  font-weight: 500;
 }
