@@ -5,50 +5,62 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mang {
+:root {
+  --border-radius-value: 3px;
+}
+
+.layer {
   width: 100vw;
   height: 100vh;
-  background-color: #263544;
+  background-color: bisque;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mangChart {
-  width: 800px;
-  height: 600px;
-  background-color: #fff9d9;
-  border-radius: 3px;
-  padding: 24px;
-  overflow-x: scroll;
+.layerChart {
   position: relative;
-  display: inline;
-}
-
-.thanhDoc {
-  width: 40px;
-  height: 300px;
-  background-color: #008a00;
-  border-radius: 2px;
+  width: 900px;
+  height: 600px;
+  background-color: #fff;
   cursor: pointer;
-  margin-right: 40px;
 }
 
-.thanhDoc:active {
-  background-color: #008a00a1;
+.svgChart {
+  height: 100%;
+  width: 100%;
 }
 
-.phan1 {
-  background-color: #6ba400;
+.chartLine {
+  fill: none;
+  stroke: #c6c4b7;
+  stroke-width: 1px;
 }
 
-.phan2 {
-  background-color: #008a00;
-}
-.phan2Red {
-  background-color: #ba322b;
+.rectAnglePart1 {
+  fill: #7cb900;
+  stroke-width: 3;
+  border-top-left-radius: var(--border-radius-value);
+  border-top-right-radius: var(--border-radius-value);
 }
 
-.phan3 {
-  background-color: #066a01;
+.rectAnglePart2 {
+  fill: #009300;
+  stroke-width: 3;
+}
+
+.rectAnglePart3 {
+  fill: #006a00;
+  stroke-width: 3;
+  border-bottom-left-radius: var(--border-radius-value);
+  border-bottom-right-radius: var(--border-radius-value);
+}
+
+.textRectangle {
+  fill: red;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+}
+
+.rectAnglePart1Group {
 }
